@@ -1,10 +1,13 @@
-This App has local schedule notification as a reminder at particular time both on iOS and Android.
+This React Native App has local schedule notification as a reminder at a particular time both on iOS and Android.
 
-The notification are set locally in index.js (background) and app.js (foreground) 
+The notification is set locally in index.js (background) and app.js (foreground) 
 
-I use two library:
+I use two libraries:
 
-- https://github.com/zo0r/react-native-push-notification.git
-- https://github.com/transistorsoft/react-native-background-fetch.git
-
-
+- [react-native-push-notification](https://github.com/zo0r/react-native-push-notification.git)
+  
+     I use this library to do local schedule notifications, and it works perfectly on Android and iOS. I also tested remote notifications using firebase cloud messaging, and it also worked smoothly. 
+   
+- [react-native-background-fetch](https://github.com/transistorsoft/react-native-background-fetch.git)
+    
+     I use this library to perform background tasks and display notifications even when the app is closed. And at this time, it is the only working library for iOS and Android. This background task is only fetch at a minimum interval 15 minutes by default. So I created reminders between 10-10.25 to ensure that the background task was fetched while within that interval. 
