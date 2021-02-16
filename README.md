@@ -1,6 +1,6 @@
 This App has local schedule notification as a reminder at particular time both on iOS and Android.
 
-The notification are set local in index.js (background) and app.js (foreground) 
+The notification are set locally in index.js (background) and app.js (foreground) 
 
 I use two library:
 
