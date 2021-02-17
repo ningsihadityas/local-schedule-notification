@@ -1,4 +1,4 @@
-This React Native App has local daily schedule notifications as a reminder at a particular time everyday, both on iOS and Android.
+This React Native App has local schedule notifications as a reminder at a particular time everyday, both on iOS and Android.
 
 The notification is set locally in index.js (background) and app.js (foreground) 
 
